@@ -28,5 +28,10 @@ Ouathdemo::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  ENV["CONSUMER_KEY"] = 'W5OlufwB6i1EY4OstxTsA'
+  ENV["CONSUMER_SECRET"] = 'XrR3TP3Zt1wTMqLwhpkvFzxnPI6yFX3ynIviuCiIUg'
+
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 end
 
